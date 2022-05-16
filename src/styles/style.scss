@@ -1,48 +1,7 @@
-/* SETUP  */
+@import "./components/app-footer";
+@import "./components/app-header";
+@import "./components/game-list";
+@import "./components/game-preview";
 
-@import "./setup/variables";
-@import "./setup/mixins";
-@import "./setup/modal";
-
-/* BASICS */
-@import "./basic/base";
-@import "./basic/layout";
-@import "./basic/helpers";
-@import "./basic/mq";
-@import "./basic/buttons";
-
-/* COMPONENTS */
-
-@import "./components/main-header";
-@import "./components/main-footer";
-@import "./components/room-list";
-@import "./components/room-preview";
-@import "./components/home-page-preview";
-@import "./components/user-login-modal";
-
-/* user-CMPS */
-
-@import "./view/dashboard";
-@import "./components/user-cmps/ask-login";
-@import "./components/user-cmps/login-modal";
-
-/* header-CMPS */
-
-@import "./components/main-header-cmps/user-modal-log";
-@import "./components/main-header-cmps/room-filter";
-@import "./components/main-header-cmps/search-bar";
-
-/* details-CMPS */
-
-@import "./components/room-details-cmps/reserve-modal";
-@import "./components/room-details-cmps/room-review";
-@import "./components/room-details-cmps/modal-checkout";
-@import "./components/room-details-cmps/guest-modal";
-
-/* PAGES */
-
+@import "./view/details";
 @import "./view/home-page";
-@import "./view/stay-app";
-@import "./view/stay-details";
-@import "./view/stay-edit";
-@import "./view/user-login";

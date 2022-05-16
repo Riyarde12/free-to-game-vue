@@ -1,5 +1,5 @@
 <template>
-	<section>
+	<section class="home-page">
 		<game-list v-if="games" :games="games" />
 		<!-- <pre>{{ games[0] }}</pre> -->
 	</section>
