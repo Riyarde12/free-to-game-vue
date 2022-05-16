@@ -1,0 +1,166 @@
+.room-review {
+    border-top: 1px solid $clr5;
+    padding: 42px 0;
+
+    .progress-bar {
+        height: 4px;
+        width: 11.25rem;
+        & .el-progress-bar__inner {
+            background-color: $clr2;
+        }
+    }
+
+    .score-list-container {
+        margin-bottom: 20px;
+        ul {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+
+            // width: 100%;
+
+            li {
+                // max-width: 457px;
+                margin-right: 6.26562rem;
+                margin-bottom: 25px;
+            }
+        }
+
+        .progress-container {
+            font-weight: 400;
+            font-size: 1em;
+            line-height: 1.25;
+        }
+    }
+
+    .room-review-list {
+        ul {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 40px 1px;
+
+            li {
+                margin-right: 6.26562rem;
+            }
+        }
+
+        .review-header {
+            .review-by-container {
+                // align-items: center;
+                justify-content: flex-start;
+                padding-bottom: 10px;
+            }
+
+            .container {
+                display: flex;
+                flex-direction: column;
+                margin-left: 12px;
+
+                & .name {
+                    font-weight: 600;
+                    font-size: 1rem;
+                    margin-bottom: 5px;
+                }
+                & .date {
+                    font-size: 0.875rem;
+                    font-weight: 500;
+                    color: $clr3;
+                }
+            }
+
+            & p {
+                line-height: 1.5rem;
+            }
+        }
+    }
+    .room-reviews-header {
+        .container {
+            padding-bottom: 31px;
+        }
+
+        .star-review {
+            margin-right: 5px;
+            img {
+                height: 0.9864em;
+                width: 0.94062em;
+            }
+        }
+
+        .reviews {
+            font-size: 1.375em;
+            font-weight: 600;
+            line-height: 1.25;
+        }
+    }
+    & .show-more-btn {
+        background-color: $clr8;
+        border: none;
+        width: 115px;
+        display: flex;
+        align-items: center;
+        margin-top: 7px;
+        font-size: 1rem;
+        padding: 0;
+        font-family: $txtBookDefault;
+
+        & p {
+            margin: 3px;
+        }
+    }
+}
+
+.modal-review {
+    width: 700px;
+    transform: translateX(-50%);
+    top: 30%;
+    // transform: translateY(-50%);
+    // top: 50%;
+    left: 50%;
+    & .review-modal {
+        .review-by-container {
+            // align-items: center;
+            justify-content: flex-start;
+            padding-bottom: 10px;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            margin-left: 12px;
+
+            & .name {
+                font-weight: 600;
+                font-size: 1rem;
+                margin-bottom: 5px;
+            }
+            & .date {
+                font-size: 0.875rem;
+                font-weight: 500;
+                color: $clr3;
+            }
+        }
+
+        & p {
+            line-height: 1.5rem;
+            margin: 10px 0;
+        }
+        & .close-line {
+            display: flex;
+            justify-content: flex-end;
+            & .close {
+                background-color: $clr8;
+                border: none;
+                width: 55px;
+                display: flex;
+                align-items: center;
+                margin-top: 7px;
+                font-size: 1rem;
+                padding: 0;
+                font-family: $txtBookDefault;
+
+                & p {
+                    margin: 3px;
+                }
+            }
+        }
+    }
+}

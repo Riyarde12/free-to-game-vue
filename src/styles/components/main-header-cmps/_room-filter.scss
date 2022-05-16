@@ -1,0 +1,96 @@
+.room-filter {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    & .seperator {
+        width: 10px;
+        height: 30px;
+        border-right: $clr5 solid 1px;
+        margin-right: 10px;
+    }
+    & .filter-btn {
+        & svg {
+            margin-inline-start: 5px;
+        }
+    }
+
+    & .modal-type {
+        width: 360px;
+        left: 190px;
+
+        & .options {
+            padding: 20px;
+            border-bottom: 1px solid $clr6;
+            & .filter-option {
+                padding: 12px 0;
+                display: flex;
+                gap: 20px;
+                align-items: center;
+                & input {
+                    border-color: $clr7;
+                    background-color: $clr2;
+                    margin: 0 15px;
+                    cursor: pointer;
+                    width: 25px;
+                    height: 25px;
+                }
+                & label {
+                    width: 220px;
+                    & .title-option {
+                        cursor: pointer;
+                        font-size: 1rem;
+                        margin-bottom: 5px;
+                        line-height: 1.25rem;
+                    }
+                    & .desc-option {
+                        cursor: pointer;
+                        line-height: 1.125rem;
+                        font-size: 0.875rem;
+                        color: $clr3;
+                    }
+                }
+            }
+        }
+        & .btns-area {
+            display: flex;
+            padding: 20px;
+            align-items: flex-end;
+            justify-content: space-between;
+        }
+    }
+    & .modal-price {
+        width: 450px;
+
+        & .vue-histogram-slider-wrapper {
+            padding: 30px 0;
+            // padding: 20px;
+            border-bottom: 1px solid $clr6;
+            margin: 15px 0 !important;
+            --primary-color: $clr21;
+            --label-color: $clr21;
+
+            --font-family: $txtDefault !important;
+
+            margin-left: 20px !important;
+            & .overlay {
+                width: 400px !important;
+            }
+
+            .irs--round .irs-single,
+            .irs--round .irs-bar {
+                background-color: $clr4 !important;
+            }
+            .irs--round .irs-to,
+            .irs--round .irs-from {
+                display: none;
+            }
+        }
+        & .btns-area {
+            display: flex;
+            margin: 20px 25px;
+            align-items: flex-end;
+            justify-content: space-between;
+        }
+    }
+}

@@ -1,0 +1,185 @@
+.modal-display-checkout {
+    padding-bottom: 48px;
+    margin-top: 38px;
+
+    .checkout-container {
+        flex-direction: column;
+    }
+
+    .tools-container {
+        border-radius: 12px;
+        border: 1px solid $clr5;
+        box-shadow: $op5;
+        flex-direction: column;
+        padding: 24px;
+        margin-top: 10px;
+
+        .top-modal-container {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            margin-bottom: 1.5em;
+        }
+
+        .top-modal-container {
+            & img {
+                height: 12px;
+                width: 12px;
+                margin-right: 5px;
+            }
+            & .price {
+                font-size: 1.375rem;
+                font-family: $txtBoldDefault;
+            }
+            .display-review-info {
+                font-weight: 600;
+                font-size: 0.875rem;
+                :nth-child(3) {
+                    margin: 5px;
+                }
+            }
+        }
+
+        & .reserve-modal {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            & .reserve-msg {
+                font-size: 0.875rem;
+                line-height: 1.125rem;
+                margin: 20px 0;
+            }
+
+            & p {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                line-height: 1.25rem;
+                margin: 5px 0;
+                & .reserve-title {
+                    text-decoration: underline;
+                }
+                &.reserve-total {
+                    font-family: $txtBoldDefault;
+                    margin-top: 10px;
+                    padding-top: 23px;
+                    border-top: 1px solid $clr5;
+                }
+            }
+        }
+    }
+    .display-order-container {
+        .checkin-checkout-container {
+            cursor: pointer;
+            margin-bottom: 16px;
+            border-radius: 8px;
+            flex-direction: column;
+            border: 1px solid $clr4;
+            .checkin-btn {
+                padding: 0px;
+                text-align: left;
+                margin: 0px;
+                position: relative;
+                width: 100%;
+                border-radius: 8px;
+
+                // & .modal-date-btn {
+                & .right-border {
+                    border-right: 1px solid $clr4;
+                }
+                // }
+
+                .add-dates-container {
+                    flex-direction: column;
+                    padding: 15px 0;
+                    max-width: 160px;
+                    display: flex;
+                    justify-content: space-evenly;
+
+                    & .add-date {
+                        color: $clr3;
+                    }
+
+                    & .el-range-editor.el-input__inner {
+                        height: 65px !important;
+                        position: absolute;
+                        width: 321px !important;
+                        opacity: 0;
+                    }
+
+                    .checkin-out {
+                        padding-left: 12px;
+                        font-size: 0.7rem;
+                        font-family: $txtBoldDefault;
+                        line-height: 0.75;
+                    }
+
+                    & :nth-child(2) {
+                        width: 160.967px;
+                    }
+                }
+
+                .add-date {
+                    padding-left: 12px;
+                    padding-top: 6px;
+                }
+
+                .add-guests-container {
+                    padding: 11px 36px 10px 12px;
+                    border-top: 1px solid $clr4;
+
+                    & svg {
+                        display: block;
+                        fill: none;
+                        height: 16px;
+                        width: 16px;
+                        stroke: currentcolor;
+                        stroke-width: 4px;
+                        overflow: visible;
+                    }
+
+                    .guests {
+                        padding: 5px 0;
+                        color: $clr1;
+                        font-size: 0.675rem;
+                        // font-weight: 800;
+                        font-family: $txtBoldDefault;
+                        line-height: 0.75;
+                    }
+                    .guests-val {
+                        color: $clr3;
+                    }
+                }
+            }
+        }
+
+        .availability-container {
+            color: $clr8;
+            font-size: 1rem;
+            font-weight: 600;
+            line-height: 1.25;
+
+            div {
+                padding: 14px 24px;
+                font-size: 1rem;
+                line-height: 1.25;
+                font-weight: 600;
+                width: 100%;
+                height: 3em;
+            }
+        }
+    }
+    .availability-container {
+        display: flex;
+        border-radius: 8px;
+        width: 322.733px;
+        height: 48px;
+        justify-content: center;
+        align-items: center;
+        border: none;
+    }
+}
+.disable {
+    pointer-events: none;
+}

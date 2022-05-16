@@ -1,0 +1,75 @@
+.login-modal {
+    & .modal-container {
+        width: 800px;
+        position: relative;
+        & svg {
+            display: block;
+            fill: none;
+            height: 16px;
+            width: 16px;
+            top: 20px;
+            right: 20px;
+            stroke: currentcolor;
+            stroke-width: 3;
+            overflow: visible;
+            position: absolute;
+            margin: 5px;
+        }
+        & .modal-header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            & h4 {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding-bottom: 20px;
+                width: 100%;
+                border-bottom: 1px solid $clr5;
+            }
+        }
+        & .modal-title {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-top: 35px;
+        }
+        & .modal-body {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            height: 250px;
+            flex-direction: column;
+            & input,
+            button {
+                height: 50px;
+                width: 100%;
+                border: 1px solid $clr4;
+                border-radius: 10px;
+            }
+            & input {
+                padding-left: 20px;
+            }
+        }
+        & .modal-footer {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            & button {
+                border: none;
+                font-size: 0.875rem;
+                padding: 8px 0;
+                background-color: $clr8;
+                font-weight: 600;
+                text-decoration: underline;
+                color: $clr4;
+            }
+        }
+    }
+    & h1 {
+        font-size: 1.375rem;
+    }
+    height: 0px;
+    width: 0px;
+    padding: 0px;
+}

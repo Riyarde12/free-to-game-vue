@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: $txtDefault;
+  color: $clr2;
+}
+
+body {
+  margin: 0;
+}
+
+img {
+  width: 100%;
+  // min-height: 80%;
+  height: 100%;
+}
+input {
+  cursor: pointer;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+p,
+ul {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding-inline-start: 0;
+}
+
+button {
+  cursor: pointer;
+  text-align: center;
+}

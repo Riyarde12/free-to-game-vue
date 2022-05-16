@@ -1,0 +1,82 @@
+.dashboard {
+    & h1 {
+        margin-top: 30px;
+        text-align: center;
+        padding-bottom: 30px;
+        border-bottom: 1px solid $clr5;
+    }
+    & .dashboard-modals-area {
+        font-family: $txtBoldDefault;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 60px;
+        border-left: 1px $clr5 solid;
+    }
+    & .main-layout-dashboard {
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+        & .dashboard-chart {
+            width: 1000px;
+            & .dashboard-line {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                height: 80px;
+                border-top: 1px solid $clr5;
+                gap: 20px;
+                &.dashboard-title {
+                    border-top: none;
+                    font-family: $txtBoldDefault;
+                    text-align: center;
+                }
+                & div {
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+
+                    &.dashboard-name {
+                        width: 200px;
+                    }
+                    &.dashboard-order-date {
+                        width: 135px;
+                    }
+                    &.dashboard-date {
+                        width: 150px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                    }
+                    &.dashboard-amount {
+                        width: 115px;
+                    }
+                    &.dashboard-user {
+                        width: 115px;
+                    }
+
+                    &.dashboard-status {
+                        width: 200px;
+                        justify-content: space-around;
+                        & button {
+                            height: 35px;
+                            border-radius: 10px;
+                            border: none;
+                            padding: 8px 16px;
+                            cursor: pointer;
+                            color: $clr8;
+                            font-size: 0.875rem;
+                            font-weight: 600;
+                            &.dashboard-approve {
+                                background-color: $clr18;
+                            }
+                            &.dashboard-decline {
+                                background-color: $clr4;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

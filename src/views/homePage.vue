@@ -1,0 +1,31 @@
+<template>
+	<section>
+		<game-list v-if="games" :games="games" />
+		<!-- <pre>{{ games[0] }}</pre> -->
+	</section>
+</template>
+<script>
+	import { freeGamesService } from "../services/free-games-service.js";
+	import gameList from "../components/gameList.vue";
+	export default {
+		name: "homePage",
+		components: {
+			gameList,
+		},
+		created() {
+			this.getGames();
+		},
+		data() {
+			return {
+				games: null,
+			};
+		},
+		methods: {
+			async getGames() {
+				this.games = await freeGamesService.query();
+				console.log(this.games);
+			},
+		},
+		computed: {},
+	};
+</script>

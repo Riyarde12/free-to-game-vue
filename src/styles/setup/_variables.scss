@@ -1,0 +1,65 @@
+// COLOR PALETTE
+$clr1: #000000;
+$clr2: #222222;
+$clr3: #717171;
+$clr4: #b0b0b0;
+$clr5: #dddddd;
+$clr6: #ebebeb;
+$clr7: #f7f7f7;
+$clr8: #ffffff;
+$clr9: #fff8f6;
+$clr10: #c13515;
+$clr11: #b32505;
+$clr12: #e07912;
+$clr13: #008a05;
+$clr14: #428bff;
+$clr15: #ff385c;
+$clr16: #92174d;
+$clr17: #460479;
+$clr18: #cc2d4a;
+$clr19: #9e9e9e41;
+$clr20: #ffffff65;
+$clr21: #bd1e59;
+$clr22: #b6304f;
+
+// LINEAR-GRADIENT
+
+$lg1: linear-gradient(to right, #e61e4d 0%, #e31c5f 50%, #d70466 100%);
+$lg2: radial-gradient(circle closest-side, $clr22 0%, $clr15 90%);
+$lg3: linear-gradient(to right, #bd1e59 0%, #92174d 50%, #861453 100%);
+$lg4: radial-gradient(
+    circle closest-side,
+    #d70466 0%,
+    #bd1e59 30%,
+    #92174d 55%,
+    #861453 72.5%,
+    #6c0d63 90%,
+    #6c0d63 100%
+);
+$lg5: linear-gradient(to right, #59086e 0%, #460479 50%, #440589 100%);
+$lg6: radial-gradient(circle at center, #6c0d63 0%, #59086e 30%, #460479 55%, #440589 72.5%, #3b07bb 90%, #3b07bb 100%);
+$lg7: radial-gradient(
+    circle at center,
+    $clr21 0%,
+
+    $clr15 70%
+);
+
+// TXT
+
+$txtLogoDefault: Renogare;
+$txtDefault: Cereal, Circular, Roboto, sans-serif;
+$txtBookDefault: Cereal-book, Circular-book, Roboto-book, sans-serif;
+$txtBoldDefault: Cereal-bold, Circular-bold, Roboto-bold, sans-serif;
+
+// OPACITY
+
+$op1: 0 8px 28px rgba(0, 0, 0, 0.28);
+$op2: 1px solid rgba(0, 0, 0, 0.04);
+$op3: 0 6px 20px rgba(0, 0, 0, 0.2);
+$op4: 1px solid rgba(0, 0, 0, 0.04);
+$op5: 0 6px 16px rgba(0, 0, 0, 0.12);
+$op6: 1px solid rgba(0, 0, 0, 0.04);
+$op7: 0 2px 4px rgba(0, 0, 0, 0.18);
+$op8: 1px solid rgba(0, 0, 0, 0.08);
+$op9: 0px 10px 37px rgba(0, 0, 0, 0.15);
