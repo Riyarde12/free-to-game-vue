@@ -3,9 +3,9 @@
 		<router-link :to="`/details/${game.id}`">
 			<div class="container">
 				<div class="container-info">
-					<h1>Game: {{ game.title }}</h1>
-					<h1>Platform: {{ game.platform }}</h1>
-					<h1>Genre: {{ game.genre }}</h1>
+					<h1>{{ game.title }}</h1>
+					<!-- <h1>Platform: {{ game.platform }}</h1> -->
+					<!-- <h1>Genre: {{ game.genre }}</h1> -->
 				</div>
 				<img :src="getGamePicture" alt="Game image missing" />
 			</div>

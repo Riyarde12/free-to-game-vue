@@ -1,0 +1,27 @@
+.app-header {
+    // margin-left: 8.6%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 2px 0px 0px;
+    padding-left: 8.6%;
+    background-color: #171717;
+    padding-right: 8.6%;
+    justify-content: space-between;
+
+    h1 {
+        color: #ee3124;
+        font-family: lato;
+        font-size: 2rem;
+    }
+
+    nav {
+        a {
+            font-family: open-sans;
+            color: #ddd;
+            border-left: 3px solid rgb(12, 12, 12);
+            border-right: 3px solid rgb(12, 12, 12);
+            padding: 31% 10px;
+        }
+    }
+}

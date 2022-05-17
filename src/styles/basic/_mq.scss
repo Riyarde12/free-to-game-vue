@@ -1,0 +1,26 @@
+// MOBILE
+
+@media (max-width: 500px) {
+    .game-list {
+        padding: 0 20px;
+    }
+    // .game-preview {
+    //     .container {
+    //         flex-direction: column;
+    //     }
+    // }
+}
+
+@media (max-width: 850px) {
+    .game-preview {
+        .container {
+            // flex-direction: column;
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .game-list {
+        justify-content: center;
+    }
+}
