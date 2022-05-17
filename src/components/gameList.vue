@@ -1,12 +1,12 @@
 <template>
 	<section class="game-list">
-		<ul>
-			<li v-for="game in games" :key="game.id">
-				<game-preview :game="game" />
-				<!-- <game-preview /> -->
-			</li>
-		</ul>
-		<!-- <pre>{{ games[0] }}</pre> -->
+		<!-- <ul> -->
+		<!-- <ul> -->
+		<li v-for="game in games" :key="game.id">
+			<game-preview :game="game" />
+		</li>
+		<!-- </ul> -->
+		<!-- </ul> -->
 	</section>
 </template>
 
