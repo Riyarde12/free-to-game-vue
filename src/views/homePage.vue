@@ -1,7 +1,6 @@
 <template>
 	<section class="home-page">
 		<game-list v-if="games" :games="games" />
-		<!-- <pre>{{ games[0] }}</pre> -->
 	</section>
 </template>
 <script>
@@ -23,7 +22,6 @@
 		methods: {
 			async getGames() {
 				this.games = await freeGamesService.query();
-				console.log(this.games);
 			},
 		},
 		computed: {},

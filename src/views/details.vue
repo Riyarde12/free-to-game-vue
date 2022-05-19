@@ -1,15 +1,15 @@
 <template>
 	<section class="details" v-if="game">
-		<div>
+		<img :src="game.thumbnail" alt="Image is missing" />
+		<div class="container-info">
+			<a :href="game.game_url">Play</a>
 			<h1>Name: {{ game.title }}</h1>
-			<h1>Name: {{ game.short_description }}</h1>
-			<h1>Name: {{ game.genre }}</h1>
-			<h1>Name: {{ game.platform }}</h1>
-			<h1>Name: {{ game.publisher }}</h1>
-			<h1>Name: {{ game.developer }}</h1>
-			<h1>Name: {{ game.release_date }}</h1>
-			<a :href="game.game_url">Click here to play:</a>
-			<img :src="game.thumbnail" alt="Image is missing" />
+			<h1>Description: {{ game.short_description }}</h1>
+			<h1>Genre: {{ game.genre }}</h1>
+			<h1>Platform: {{ game.platform }}</h1>
+			<h1>Publisher: {{ game.publisher }}</h1>
+			<h1>Developer: {{ game.developer }}</h1>
+			<h1>Release Date: {{ game.release_date }}</h1>
 		</div>
 	</section>
 </template>

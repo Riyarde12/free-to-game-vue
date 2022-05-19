@@ -4,23 +4,21 @@
     .game-list {
         padding: 0 20px;
     }
-    // .game-preview {
-    //     .container {
-    //         flex-direction: column;
-    //     }
-    // }
-}
 
-@media (max-width: 850px) {
-    .game-preview {
-        .container {
-            // flex-direction: column;
+    .app-header {
+        h1 {
+            font-size: 1.5rem;
         }
     }
 }
 
-@media (max-width: 1200px) {
-    .game-list {
-        justify-content: center;
+@media (max-width: 1020px) {
+    .details {
     }
 }
+
+// @media (max-width: 1200px) {
+//     .game-list {
+//         justify-content: center;
+//     }
+// }

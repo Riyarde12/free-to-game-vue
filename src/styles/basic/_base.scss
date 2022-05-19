@@ -9,6 +9,7 @@ body {
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 li {
@@ -38,6 +39,7 @@ pre,
 p,
 ul {
   margin: 0;
+  font-family: open-sans;
 }
 
 a {

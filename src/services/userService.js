@@ -26,7 +26,6 @@ function login(userlogin) {
     if (username && password) {
         return new Promise((resolve, reject) => {
             const users = storageService.load(USERS_KEY);
-            console.log('users', users);
             let user = users.filter(user => (user.username === username && user.password === password));
 
             if (user.length) {
