@@ -22,6 +22,7 @@ async function query() {
                 }
             };
             const res = await axios.request(options);
+            console.log('res.data', res.data);
             games = res.data.splice(0, 20);
             storageService.save(GAMES_KEY, games);
 
@@ -32,6 +33,8 @@ async function query() {
         console.log('Cannot get API req', err);
     }
 }
+
+
 
 async function getGameById(gameId) {
     try {
@@ -49,8 +52,14 @@ async function getGameById(gameId) {
             const res = await axios.request(options);
             game = res.data;
             storageService.save(GAME_KEY, game);
+            console.log('game', game);
             return game;
-        } else return storageService.get(GAMES_KEY, gameId);
+        } else {
+            const game = storageService.get(GAMES_KEY, gameId);
+            console.log('game', game);
+            return game;
+
+        }
     } catch (err) {
         console.log('Cannot get game', err);
     }
